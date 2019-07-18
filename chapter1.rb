@@ -21,6 +21,12 @@ p "Blackbeard".match regexp1
 # Matching name with 2 words
 regexp1 = /[a-z0-9\s]+/i
 regexp2 = %r{[a-z0-9\s]+}i # => equivalente a /[a-z0-9\s]+/
-regexp3 = /[\w\d\s]+/i     # => refactored way to do something
+regexp3 = /[\w\d\s]+/i     # => refactored way to do the same thing
 p "Captain hook".match regexp1
 p "Long John the 3rd".match regexp3
+
+# Matches domain
+regexp1 = /\w+\@\w+\.\w+/i
+p "sara@example.com".match regexp1
+
+
